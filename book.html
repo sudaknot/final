@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book a Trip to Tahiti</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Book Now!</h1>
+        </div>
+        <div class="hamburger" onclick="myFunction(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+        <nav>
+            <ul id="navbarlist">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="dining.html">Dining</a></li>
+                <li><a href="attractions.html">Attractions</a></li>
+                <li><a href="transportation.html">Transportation</a></li>
+                <li><a href="lodging.html">Lodging</a></li>
+                <li><a href="book.html">Booking</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="waves2"></div>
+    <div class="bookingDIV">   
+        <div class="bookformDIV">
+          <form class="booking-form">
+              <label for="name">Full Name</label>
+              <input type="text" id="name" name="name" required>
+
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" required>
+
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" name="phone" required>
+
+              <label for="dates">Travel Dates</label>
+              <input type="text" id="dates" name="dates" placeholder="e.g., June 1 - June 10, 2024" required>
+
+              <label for="adults">Number of Adults</label>
+              <select id="adults" name="adults">
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+              </select>
+
+              <label for="children">Number of Children</label>
+              <select id="children" name="children">
+                  <option value="0">0</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+              </select>
+              <label for="comments">Additional Comments</label>
+              <textarea id="comments" name="comments" rows="2" placeholder="Any special requests or information"></textarea>
+              <button type="submit">Submit</button>
+          </form>
+      </div> 
+    </div>
+    <div class="waves3"></div>
+    <footer>
+        <p>&copy; 2024 Explore Taniti. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

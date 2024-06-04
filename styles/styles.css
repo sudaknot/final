@@ -1,0 +1,515 @@
+body {
+  font-family: Garamond, serif, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(177deg, rgba(210, 187, 152, 0.86) 20%, rgba(244,244,244,1) 80%);
+}
+
+
+header {
+  font-family: Trebuchet MS, sans-serif;
+  background-color: rgb(0, 0, 0);
+  color: white;
+  padding: 1em 0;
+  text-align: center;
+  position: relative;
+  border-bottom: 1px solid white;
+}
+
+header .logo h1 {
+  z-index: 10003;
+  margin: 0;
+  font-size: 2em;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 10px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.1em;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: black;
+  padding: 20px 10px;
+  text-align: center;
+  margin-bottom: 20px;
+  margin-right: 0;
+  border-bottom: 1px solid white;
+}
+
+
+
+
+
+.waves {
+  width: 100%vw;
+  background-image: url("../images/main/hpwaves.jpg");
+  opacity: 1;
+  background-size: cover;
+  padding: 20px;
+  margin-top: -20px;
+  border-bottom: 1px solid white;
+}
+
+.waves2 {
+  width: 100%vw;
+  background-image: url("../images/main/hpwaves.jpg");
+  opacity: 1;
+  background-size: cover;
+  padding: 27px;
+  margin-top: -20px;
+  border-bottom: 1px solid white;
+}
+.waves3 {
+  width: 100%vw;
+  background-image: url("../images/main/hpwaves.jpg");
+  opacity: 1;
+  background-size: cover;
+  padding: 17px;
+  margin-top: -20px;
+  margin-bottom: 70px;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+}
+
+
+.hero-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width:fit-content;
+  height: 500px;
+  background-color: #aaa;
+  margin-bottom: 10px;
+  position: relative;
+  overflow: hidden;
+  padding: auto 0px;
+}
+
+#heroimage {
+  transform: scale(0.5);
+}
+
+@media (max-width: 768px) {
+  .hero-image {
+      max-height: 300px;
+  }
+  #heroimage {
+      transform: scale(0.5);
+  }
+  #attractmain {
+    transform: scale(0.5);
+  }
+}
+
+
+.hero-image img {
+  display: block;
+  object-fit: cover;
+}
+
+.hero-title {
+  font-size: 4em;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  -webkit-text-stroke: 1px black;
+  position: absolute;
+  top: 250px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+
+@media (max-width: 768px) {
+.hero-title {
+  font-size: 2.7em;
+  top: 180px;
+}
+}
+
+.hero-caption {
+  padding-top: 10px;
+  font-size: 1.8em;
+  color: white;
+  border-top: 1px solid rgba(212, 2, 212, 0.63); 
+}
+
+main {
+  padding: 20px;
+  padding-right: 0;
+  padding-left: 0;
+  margin-bottom: 50px;
+}
+
+.introduction {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid black;
+  background-color: rgba(128, 0, 128, 0.308);
+  border-radius: 20px;
+  margin-bottom: 20px;
+  align-items: center;
+}
+
+.introduction h2 {
+  color: white;
+  font-size: 1.5em;
+  padding-bottom: 0;
+}
+
+.introduction p {
+  margin-top: 0;
+  border-top: 2px solid rgb(160, 42, 160);
+  padding: 30px 20px 15px 20px;
+}
+
+.introparagraph {
+  color: white;
+}
+.highlight {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+}
+
+.highlight-content::after {
+  content: "";
+  width: 200px;
+  height: 2px;
+  display: block;
+  position: relative;
+  background-color: rgba(128, 0, 128, 0.134);
+}
+
+@media (max-width: 768px) {
+  .highlight-content::after {
+      width: 50px;
+  }
+}
+
+.highlightheader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+}
+
+.highlightheader h3 {
+  color: white;
+  font-family: papyrus;
+  font-size: 2.5em;
+}
+
+@media (max-width: 768px) {
+.highlightheader h3 {
+  font-size: 1.5em;
+}
+}
+
+.highlight:nth-child(odd) .highlight-image {
+  order: 1;
+}
+
+.highlight:nth-child(odd) .highlight-content {
+  order: 2;
+}
+
+.highlight:nth-child(even) .highlight-image {
+  order: 2;
+}
+
+.highlight:nth-child(even) .highlight-content {
+  order: 1;
+}
+
+.highlight-image {
+  width: 100%;
+  height: 400px;
+  background-color: #ccc;
+  overflow: hidden;
+  position: relative;
+}
+
+@media (max-width: 768px) {
+.highlight-image {
+  height: 250px;
+}
+}
+
+
+.icon {
+  font-size: 20px;
+  position: absolute;
+  bottom: 0;
+  right: 2%;
+  background-color: transparent;
+  color: rgba(255, 255, 255, 0.904);
+}
+
+@media (max-width:768px) {
+  .icon {
+      font-size:15px;
+  }
+}
+
+.highlight-image img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.highlight-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 4px;
+  text-align: center;
+}
+
+.highlight-caption {
+  font-weight: bold;
+  font-size: 2em;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+  .highlight-caption {
+    font-size: 1em;
+  }
+}
+  
+.highlight p {
+  font-size: 1.5em;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+@media (max-width: 768px) {
+.highlight p {
+  font-size: 0.8em;
+}
+}
+
+@media (max-width: 600px) {
+.highlight p {
+  font-size: .7em;
+}
+}
+
+.cost {
+  font-size: 20px;
+  position: absolute;
+  bottom: 0;
+  left: 5%;
+  background-color: transparent;
+  color: rgba(255, 255, 255, 0.959);
+}
+
+@media (max-width:768px) {
+  .cost {
+      font-size: 15px;
+  }
+}
+
+footer {
+  background-color: rgba(0, 0, 0, 0.832);
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #333;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  padding: 8px 16px;
+}
+
+.navbar a:hover {
+  background-color: #575757;
+  border-radius: 4px;
+}
+
+.image-container {
+  width: 100%;
+  max-width: 800px;
+  height: 400px;
+  overflow: hidden;
+  position: relative;
+  margin: auto;
+}
+
+.image-container img {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  height: auto;
+}
+
+.booking-form {
+  max-width: 700px;
+  margin: 5px 10px 10px;
+  padding: 8px;
+  border: 2px solid black;
+  border-top: 2px solid white;
+  background-color: rgba(0, 0, 0, 0.106);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.329);
+}
+
+.booking-form h2 {
+  text-align: center;
+}
+
+.booking-form label {
+  display: block;
+  margin-bottom: 8px;
+  color: black;
+}
+
+.booking-form input,
+.booking-form select,
+.booking-form textarea {
+  width: 94%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.booking-form button {
+  width: 100%;
+  padding: 10px;
+  background-color: purple;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.booking-form button:hover {
+  background-color: #0056b3;
+}
+
+.bookformDIV {
+  margin-top: 10px
+}
+
+.bookingDIV {
+position: relative;
+display: flex;
+justify-content: center;
+margin-bottom: 310px;
+margin-top: 10px;
+}
+
+
+.bookformDIV {
+margin-top: 0;
+width: 100%;
+height: 300px;
+position: relative;
+min-width: 150px;
+max-width: 500px;
+}
+
+.hamburger {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  cursor: pointer;
+}
+
+@media (min-width: 768px) {
+.hamburger {
+  display: none;
+}
+}
+
+.bar1, .bar2, .bar3 {
+  border-radius: 10px;
+  width: 25px;
+  height: 5px;
+  background-color: #ffffffda;
+  margin: 5px 0;
+  transition: 0.4s;
+}
+
+.change .bar1 {
+  transform: translate(0, 10px) rotate(-45deg);
+}
+
+.change .bar2 {
+  opacity: 0;
+}
+
+.change .bar3 {
+  transform: translate(0, -10px) rotate(45deg);
+}
+
+@media (max-width: 768px) {
+header {
+  position: relative;
+}
+  
+#navbarlist {
+  background-color: rgba(0, 0, 0, 0);
+  z-index: 10001;
+  position: fixed;
+  top: -800px;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  gap: 40px;
+  padding-top: 15px;
+  padding-bottom: 40px;
+  transition: .4s ease-out;
+  font-size: 0.8em;
+}
+
+#navbarlist.active {
+  background-color: rgba(0, 0, 0,1);
+  top: 53px;
+  position: absolute;
+}
+
+nav ul li a:hover {
+  color: rgb(83, 252, 255);
+  text-decoration: underline;
+}
+}
+
+nav ul li a:hover {
+  color: rgb(83, 252, 255);
+  text-decoration: none;
+}
+
